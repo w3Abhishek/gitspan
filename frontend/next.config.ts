@@ -6,9 +6,6 @@ const nextConfig: NextConfig = {
   // Use 'export' for GitHub Pages, 'standalone' for Docker/Servers
   output: isGithubPages ? 'export' : 'standalone',
   
-  // Set basePath to repository name for GitHub Pages
-  basePath: isGithubPages ? '/gitspan' : '',
-  
   // Disable image optimization for static exports
   images: {
     unoptimized: isGithubPages,
