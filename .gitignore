@@ -1,0 +1,29 @@
+# Environments
+.env
+.env.*
+!.env.example
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+venv/
+env/
+.pytest_cache/
+
+# Node
+node_modules/
+.next/
+out/
+build/
+.npm/
+
+# Database
+gitspan.db
+gitspan.db-journal
+
+# OS
+.DS_Store
+Thumbs.db
+*.log
+uvicorn_logs.txt
