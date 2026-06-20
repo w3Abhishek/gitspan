@@ -41,12 +41,11 @@ export function RepoCard({ repo, forges = [], onSync, onUpdateMappings, syncing 
       STATUS_BORDER[repo.status] ?? 'border-l-border'
     )}>
       <div className="flex items-center gap-4 px-4 py-2.5">
-        <Link
-          href={`/repos/${repo.id}`}
-          className="font-mono text-[13px] font-medium text-card-foreground w-52 shrink-0 truncate hover:text-primary transition-colors"
+        <span
+          className="font-mono text-[13px] font-medium text-card-foreground w-52 shrink-0 truncate transition-colors"
         >
           {repo.full_name}
-        </Link>
+        </span>
         <div className="flex items-center gap-1.5 flex-1 min-w-0 overflow-hidden">
           <ForgePill forge={repo.source_forge} />
           <span className="text-muted-foreground text-[11px] font-mono shrink-0"> → </span>
